@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	html,body{
+		width:100%;
+		height:100%;
+	}
+	body{
+		background-color:#333;
+		background-size:100% 100%,
+						47px 53px,
+						41px 33px,
+						36px 12px,
+						20px 36px,
+						33px 42px,
+						73px 95px,
+						93px 75px,
+						83px 45px,
+						97px 95px,
+						53px 65px,
+						97px 95px,
+						53px 130px,
+						57px 67px,
+						97px 99px,
+						63px 110px,
+						107px 150px,
+						79px 170px,
+						100% 100%;
+		background-image:-webkit-radial-gradient(70% 30%,circle,rgba(0,0,0,.1) 40%, rgba(0,0,0,.7) 150%),
+						-webkit-radial-gradient(30% 30%,circle,rgba(0,0,0,.1) 1px, rgba(0,0,0,0) 1px),
+						-webkit-radial-gradient(10% 10%,circle,rgba(0,0,0,.1) 1px, rgba(0,0,0,0) 2px),
+						-webkit-radial-gradient(15% 60%,circle,rgba(0,0,0,.1) 1px, rgba(0,0,0,0) 1px),
+						-webkit-radial-gradient(5% 22%,circle,rgba(0,0,0,.1) 1px, rgba(0,0,0,0) 1px),
+						-webkit-radial-gradient(50% 73%,circle,rgba(0,0,0,.1) 1px, rgba(0,0,0,0) 1px),
+						-webkit-radial-gradient(30% 30%,circle,rgba(0,0,0,.1) 2px, rgba(0,0,0,0) 1px),
+						-webkit-radial-gradient(50% 73%,circle,rgba(0,0,0,.1) 1px, rgba(0,0,0,0) 2px),
+						-webkit-radial-gradient(30% 60%,circle,rgba(0,0,0,.1) 2px, rgba(0,0,0,0) 1px),
+						-webkit-radial-gradient(60% 53%,circle,rgba(0,0,0,.1) 1px, rgba(0,0,0,0) 2px),
+						-webkit-radial-gradient(90% 90%,circle,rgba(0,0,0,.1) 2px, rgba(0,0,0,0) 1px),
+						-webkit-radial-gradient(28% 18%,circle,rgba(0,0,0,.1) 1px, rgba(0,0,0,0) 2px),
+						-webkit-radial-gradient(40% 70%,circle,rgba(0,0,0,.1) 2px, rgba(0,0,0,0) 1px),
+						-webkit-radial-gradient(30% 60%,circle,rgba(0,0,0,.1) 2px, rgba(0,0,0,0) 1px),
+						-webkit-radial-gradient(60% 53%,circle,rgba(0,0,0,.1) 1px, rgba(0,0,0,0) 2px),
+						-webkit-radial-gradient(90% 90%,circle,rgba(0,0,0,.1) 2px, rgba(0,0,0,0) 1px),
+						-webkit-radial-gradient(28% 18%,circle,rgba(0,0,0,.1) 1px, rgba(0,0,0,0) 2px),
+						-webkit-radial-gradient(40% 70%,circle,rgba(0,0,0,.1) 2px, rgba(0,0,0,0) 1px),
+						linear-gradient(45deg,#333 0%, #555 100%);}
+/*============= 上面的不重要，純粹弄個背景而已 ==============*/
+
+	/*最大的區塊，內含全部物件*/
+	.hair-light{
+		width:220px;
+		height:646px;
+		position: absolute;
+		top:0;
+		right:0;
+		bottom:0;
+		left:0;
+		margin:auto;
+		transform: translate3d(0, 0, 0);/*強迫開啟3D加速，否則畫面會卡*/
+		/*outline:1px solid #F00;*/
+	}
+	.hair-light:before,
+	.hair-light:after{
+		content:"";
+		display:block;
+		width:90%;
+		height:10px;
+		position: absolute;
+		left:0;
+		right:0;
+		margin:auto;
+		z-index:20;
+		background-color:#F00;
+		background-image:linear-gradient(90deg,
+								rgb(236,236,236) 0%, 
+								rgb(150,150,150) 10%, 
+								rgb(200,200,200) 15%, 
+								rgb(120,120,120) 20%, 
+								rgb(80,80,80) 25%, 
+								rgb(130,130,130) 30%, 
+								rgb(130,130,130) 35%, 
+								rgb(240,240,240) 60%, 
+								rgb(60,60,60) 70%, 
+								rgb(100,100,100) 80%, 
+								rgb(128,128,128) 85%, 
+								rgb(240,240,240) 90%, 
+								rgb(40,40,40) 100%);
+	}
+	.hair-light:before{
+		top:120px;
+		box-shadow:0 2px 2px rgba(0,0,0,.5);
+	}
+	.hair-light:after{
+		bottom:120px;}
+	/*頭尾球體*/
+	.head,
+	.foot{
+		text-indent:-1000em;
+		position: absolute;
+		z-index:20;
+		display:block;
+		width:180px;
+		height:100px;
+		left:0;
+		right:0;
+		margin:auto;
+		background-color:#d4d0d1;
+		/*background-repeat:no-repeat;
+		background-size:90px 100px,
+						90px 100px,
+						90px 100px,
+
+						90px 100px;
+		background-position:left top,
+							left top,
+							left top,
+
+							right top;
+		background-image:-webkit-radial-gradient(100px 120px,62px 171px, #aaaaaa 70%, #49413d 80%, rgba(0,0,0,0) 85%),
+						 -webkit-radial-gradient(100px 120px,80px 154px, #302b25 70%, #49413d 80%, rgba(0,0,0,0) 100%),
+						 -webkit-radial-gradient(100px 120px,110px 164px, #b9b1ae 70%, #b9b1ae 90%, rgba(0,0,0,0) 100%),
+
+						 -webkit-radial-gradient(0px 100px,100px 100px, #FF0 50%, #f0f 50%);*/
+		box-shadow: 4px  0px   5px   -2px #ffffff inset,
+				   33px  0px   5px  -12px #9a928b inset,
+				   47px  0px   5px  -20px #b8afa9 inset,
+				   75px  0px  10px  -30px #37322c inset,
+				   120px 0px  10px  -60px #948f90 inset,
+				   160px 0px  10px  -90px #909195 inset,
+				   216px 0px  10px -140px #c5c3c6 inset,
+
+				    -10px 0px   5px  -2px #bbb6bb inset,
+				    -33px 0px   5px -12px #fcfaff inset,
+				    -53px 0px   5px -20px #827570 inset,
+				    -78px 0px  10px -30px #504743 inset,
+				   -120px 0px  10px -60px #ede7e5 inset,
+				   -160px 0px  10px -90px #faf7f7 inset;
+	}
+	.head{
+		top:0;
+		border-radius: 50% 50% 0 0 / 80% 80% 0 0;
+	}
+	.foot{
+		bottom:0;
+		border-radius: 0 0 50% 50% / 0 0 80% 80%;
+	}
+	/*頭尾圓球整體光線調整*/
+	.head:before,
+	.foot:before{
+		content:"";
+		display:block;
+		width:100%;
+		height:100%;
+	}
+	.head:before{
+		border-radius: 50% 50% 0 0 / 80% 80% 0 0;
+		background-image:-webkit-radial-gradient(70% 10%,150% 170%, 
+						 rgba(255,255,255,0) 0%, 
+						 rgba(255,255,255,0) 25%,
+						 rgba(0,0,0,1) 100%);
+	}
+	.foot:before{
+		border-radius: 0 0 50% 50% / 0 0 80% 80%;
+		background-image:-webkit-radial-gradient(70% 10%,150% 100%, 
+						 rgba(255,255,255,0) 0%, 
+						 rgba(255,255,255,0) 10%,
+						 rgba(0,0,0,1) 100%);
+	}
+
+	.head:after,
+	.foot:after{
+		content:"";
+		display:block;
+		position: absolute;
+		z-index:10;
+		width:130%;
+		height:28px;
+		left:-15%;
+		border-radius:13px;
+		box-shadow:-1px 8px 10px -4px rgba(255, 255, 255, 0.5) inset,
+				   1px -8px 10px -4px rgba(0, 0, 0, 0.5) inset;
+		background-image:linear-gradient(0deg,
+			             	    rgba(0,0,0,.7) 15%,
+			             	    rgba(0,0,0,0) 25%,
+			             	    rgba(255,255,255,0) 80%,
+			             	    rgba(255,255,255,.9) 100%),
+
+		                 linear-gradient(90deg,
+								rgb(236,236,236) 0%, 
+								rgb(150,150,150) 10%, 
+								rgb(200,200,200) 15%, 
+								rgb(120,120,120) 20%, 
+								rgb(80,80,80) 25%, 
+								rgb(130,130,130) 30%, 
+								rgb(130,130,130) 35%, 
+								rgb(240,240,240) 60%, 
+								rgb(60,60,60) 70%, 
+								rgb(100,100,100) 80%, 
+								rgb(128,128,128) 85%, 
+								rgb(240,240,240) 90%, 
+								rgb(40,40,40) 100%);
+	}
+	.head:after{
+		bottom:-20px;
+	}
+	.foot:after{
+		top:-20px;
+	}
+
+/*燈管本體*/
+	.light{
+		position: absolute;
+		left:0;
+		right: 0;
+		top:0;
+		bottom:0;
+		margin:auto;
+		width: 180px;
+		height: 390px;
+		background-color: #fff;
+		background-repeat:repeat;
+		background-image:linear-gradient(-45.3deg,#fff 0px, 
+			#fff 30px,	#ec1d25 30px, 
+			#ec1d25 60px, #fff 60px, 
+			#fff 90px, #015f9f 90px,
+			#015f9f 120px, #FFF 120px,
+			#fff 150px, #ec1d25 150px,
+			#ec1d25 180px, #FFF 180px,
+			#fff 210px, #015f9f 210px,
+			#015f9f 240px, #FFF 100%);
+		background-size:180px 170px;
+		-webkit-animation: roro 3s linear infinite;
+	}
+
+	.light:before, .light:after{
+		text-indent:-1000em;
+		position: absolute;
+		width:110%;
+		height:100%;
+		left:-5%;
+		display:block;
+
+	}
+	.light:before{
+		content:"back";
+		z-index:-1;
+		background-image:linear-gradient(90deg,
+			rgba(0,0,0,1) .2%,
+			rgba(0,0,0,1) .5%, 
+			rgba(0,0,0,.6) 94%, 
+			rgba(0,0,0,1) 97%,
+			rgba(0,0,0,1) 100%);
+	}
+	.light:after{
+		content:"front";
+		z-index:1;
+		background-position:10px top, left top;
+		background-image:linear-gradient(150deg, 
+								rgba(0,0,0,0.8) 0%,  
+								rgba(0,0,0,0) 10%),
+
+						 linear-gradient(90deg, 
+								rgba(255,255,255,0.5) 0%, 
+								rgba(0,0,0,0.65) 10%, 
+								rgba(0,0,0,0.6) 15%, 
+								rgba(49,42,12,0.2) 30%, 
+								rgba(50,43,12,0.2) 35%, 
+								rgba(255,255,255,0.2) 45%, 
+								rgba(255,255,255,0.2) 45%, 
+								rgba(255,255,255,0.1) 60%, 
+								rgba(255,255,255,0.6) 80%, 
+								rgba(255,255,255,0) 88%, 
+								rgba(255,255,255,0.5) 90%, 
+								rgba(255,255,255,0.5) 98%, 
+								rgba(255,255,255,0.6) 98%, 
+								rgba(255,255,255,0.6) 100%);
+		box-shadow:0 5px 7px rgba(0, 0, 0, 0.4) inset,
+				   0 -5px 7px rgba(0, 0, 0, 0.2) inset;
+	}
+	@-webkit-keyframes roro{
+		0%{ background-position:0 0;}
+		100%{ background-position:0 -170px;}
+	}
+
+	.csscoke1{
+		color:#999;
+		font-size:40px;
+		text-align:right;
+		width:300px;
+		height:290px;
+		position: absolute;
+		right:50%;
+		margin:auto 120px auto auto;
+		top:0;
+		bottom:0;
+	}
+	.csscoke2{
+		color:#999;
+		font-size:40px;
+		text-align:left;
+		width:300px;
+		height:130px;
+		position: absolute;
+		left:50%;
+		padding-top:40px;
+		margin:auto auto auto 120px;
+		top:0;
+		bottom:0;
+	}
+	.csscoke1 span{
+		font-size:23.4px;
+	}
+	.csscoke1 hr{
+		height:0px;
+		border:none;
+		border-bottom:1px dashed #999;
+		margin:20px 0;
+
+	}
+	.csscoke2 span{
+		font-size:23.4px;
+	}
+	</style>
+</head>
+<body>
+	<div class="hair-light">
+		<div class="head"></div>	
+		<div class="light"></div>
+		<div class="foot"></div>
+	</div>
+
+
+	<div class="csscoke1">Pure CSS<br><span>by</span><br>Amos
+	<hr>
+	UI design<br><span>by</span><br>
+Fran Huang</div>
+	<div class="csscoke2">CSS可樂<br><span>csscoke.com</span></div>
+</body>
+</html>

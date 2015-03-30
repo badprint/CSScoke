@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin: 0;
+		padding:0;
+	}
+	.container{
+		width:90%;
+		overflow: auto;
+		margin: auto;
+		text-align:center;
+		line-height:300%;
+		font-size:100px;
+		color:#fff;
+	}
+	.left{
+		width: 25%;
+		height: 600px;
+		background-color:#00BFD1;
+		float:left;
+		position: relative;
+	}
+	.right{
+		width: 25%;
+		height: 600px;
+		background-color:#00CA9A;
+		float:left;
+		position: relative;
+		left:50%;
+	}
+	.center{
+		width: 50%;
+		height: 600px;
+		background-color: #757D87;
+		float:left;
+		position: relative;
+		left:-25%;
+	}
+
+	.left:empty,
+	.right:empty{ width:0;}
+	.left + .right + .center{ width:50%;left:-25%;}
+	.left:empty + .right{left:75%;}
+	.left + .right:empty + .center{width:75%;left:0%;}
+	.left:empty + .right + .center{width:75%;left:-25%;}
+	.left:empty + .right:empty + .center{width:100%;left:0%;}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="left">left</div>
+		<div class="right">right</div>
+		<div class="center">center</div>
+	</div>
+</body>
+</html>

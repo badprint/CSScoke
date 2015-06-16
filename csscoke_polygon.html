@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	html,body{
+		width: 100%;
+		height: 100%;
+	}
+	body{
+		background-image:-webkit-radial-gradient(50% 50%, circle , #8DD6B6 0%, #FFF2B5 100%);
+	}
+	.info{
+		text-align: center;
+		color:rgba(255, 255, 255, 1);
+		text-shadow: 0 0 10px #000;
+		position: absolute;
+		bottom: 100px;
+		width: 100%;
+		font-size: 20px;
+	}
+	.box{
+		width: 800px;
+		height: 330px;
+		margin:auto;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		-webkit-animation: bon 1s 8s 1 both;
+	}
+	.box div{
+		width: 800px;
+		height: 330px;
+		background-image:linear-gradient(0deg, #f00 0%, #ff0 100%);
+		position: absolute;
+		left:0;
+		top: 0;
+	}
+	.box div:nth-child(3n){background-image:linear-gradient(10deg, #f00 0%, #ff0 100%);}
+	.box div:nth-child(7n){background-image:linear-gradient(50deg, #f00 0%, #ff0 100%);}
+	.box div:nth-child(10n){background-image:linear-gradient(80deg, #f00 0%, #ff0 100%);}
+	.box div:nth-child(4n+1){background-image:linear-gradient(210deg, #f00 0%, #ff0 100%);}
+	.box div:nth-child(11n){background-image:linear-gradient(300deg, #f00 0%, #ff0 100%);}
+	.box  .p01{-webkit-animation: p01 3s 9s infinite alternate both;}
+	.box  .p02{-webkit-animation: p02 3s 9s infinite alternate both;}
+	.box  .p03{-webkit-animation: p03 3s 9s infinite alternate both;}
+	.box  .p04{-webkit-animation: p04 3s 9s infinite alternate both;}
+	.box  .p05{-webkit-animation: p05 3s 9s infinite alternate both;}
+	.box  .p06{-webkit-animation: p06 3s 9s infinite alternate both;}
+	.box  .p07{-webkit-animation: p07 3s 9s infinite alternate both;}
+	.box  .p08{-webkit-animation: p08 3s 9s infinite alternate both;}
+	.box  .p09{-webkit-animation: p09 3s 9s infinite alternate both;}
+	.box  .p10{-webkit-animation: p10 3s 9s infinite alternate both;}
+
+	.box  .p11{-webkit-animation: p11 3s 9s infinite alternate both;}
+	.box  .p12{-webkit-animation: p12 3s 9s infinite alternate both;}
+	.box  .p13{-webkit-animation: p13 3s 9s infinite alternate both;}
+	.box  .p14{-webkit-animation: p14 3s 9s infinite alternate both;}
+	.box  .p15{-webkit-animation: p15 3s 9s infinite alternate both;}
+	.box  .p16{-webkit-animation: p16 3s 9s infinite alternate both;}
+	.box  .p17{-webkit-animation: p17 3s 9s infinite alternate both;}
+	.box  .p18{-webkit-animation: p18 3s 9s infinite alternate both;}
+	.box  .p19{-webkit-animation: p19 3s 9s infinite alternate both;}
+	.box  .p20{-webkit-animation: p20 3s 9s infinite alternate both;}
+
+	.box  .p21{-webkit-animation: p21 3s 9s infinite alternate both;}
+	.box  .p22{-webkit-animation: p22 3s 9s infinite alternate both;}
+	.box  .p23{-webkit-animation: p23 3s 9s infinite alternate both;}
+	.box  .p24{-webkit-animation: p24 3s 9s infinite alternate both;}
+	.box  .p25{-webkit-animation: p25 3s 9s infinite alternate both;}
+	.box  .p26{-webkit-animation: p26 3s 9s infinite alternate both;}
+	.box  .p27{-webkit-animation: p27 3s 9s infinite alternate both;}
+	.box  .p28{-webkit-animation: p28 3s 9s infinite alternate both;}
+	.box  .p29{-webkit-animation: p29 3s 9s infinite alternate both;}
+	.box  .p30{-webkit-animation: p30 3s 9s infinite alternate both;}
+
+	.box  .p31{-webkit-animation: p31 3s 9s infinite alternate both;}
+	.box  .p32{-webkit-animation: p32 3s 9s infinite alternate both;}
+	.box  .p33{-webkit-animation: p33 3s 9s infinite alternate both;}
+
+
+	.box  .e01{-webkit-animation: p11 3s 8.9s infinite alternate both;}
+	.box  .e02{-webkit-animation: p02 3s 8.9s infinite alternate both;}
+	.box  .e03{-webkit-animation: p33 3s 8.7s infinite alternate both;}
+	.box  .e04{-webkit-animation: p04 3s 8.8s infinite alternate both;}
+	.box  .e05{-webkit-animation: p05 3s 8.9s infinite alternate both;}
+	.box  .e06{-webkit-animation: p26 3s 8.8s infinite alternate both;}
+	.box  .e07{-webkit-animation: p07 3s 9.1s infinite alternate both;}
+	.box  .e08{-webkit-animation: p08 3s 8.9s infinite alternate both;}
+	.box  .e09{-webkit-animation: p19 3s 9.1s infinite alternate both;}
+	.box  .e10{-webkit-animation: p20 3s 9.1s infinite alternate both;}
+	@-webkit-keyframes bon{
+		  0%{transform:rotate(0deg) scale(.1) translateX(0px);}
+		 90%{transform:rotate(360deg) scale(2) translateX(100px);}
+		100%{transform:rotate(360deg) scale(1) translateX(0px);}
+	}
+	@-webkit-keyframes p01{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(311px 109px  ,326px 85px   ,359px  154px); -webkit-clip-path:polygon(311px 109px  ,326px 85px   ,359px  154px);transform:rotate(10deg);}
+		10%{-webkit-shape-outside:polygon(311px 109px  ,326px 85px   ,359px  154px); -webkit-clip-path:polygon(311px 109px  ,326px 85px   ,359px  154px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(48px    183px  ,63px   160px  ,97px    229px  );-webkit-clip-path: polygon(48px    183px  ,63px   160px  ,97px    229px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(48px    183px  ,63px   160px  ,97px    229px  );-webkit-clip-path: polygon(48px    183px  ,63px   160px  ,97px    229px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 194px   87px   ,227px   58px   ,244px   68px);-webkit-clip-path: polygon( 194px   87px   ,227px   58px   ,244px   68px    );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 194px   87px   ,227px   58px   ,244px   68px);-webkit-clip-path: polygon( 194px   87px   ,227px   58px   ,244px   68px    );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(48px    183px  ,63px   160px  ,97px    229px  );-webkit-clip-path: polygon(48px    183px  ,63px   160px  ,97px    229px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(120px   78px    ,158px   54px   , 195px   64px  );-webkit-clip-path: polygon(120px   78px    ,158px   54px   , 195px   64px );}
+		90%{-webkit-shape-outside: polygon(120px   78px    ,158px   54px   , 195px   64px  );-webkit-clip-path: polygon(120px   78px    ,158px   54px   , 195px   64px );transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(120px   78px    ,158px   54px   , 195px   64px  );-webkit-clip-path: polygon(120px   78px    ,158px   54px   , 195px   64px );transform:rotate(-360deg);}
+	}
+
+	@-webkit-keyframes p02{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(323px 173px  ,359px 154px  ,290px  89px ); -webkit-clip-path:polygon(323px 173px  ,359px 154px  ,290px  89px );transform:rotate(20deg);}
+		10%{-webkit-shape-outside:polygon(323px 173px  ,359px 154px  ,290px  89px ); -webkit-clip-path:polygon(323px 173px  ,359px 154px  ,290px  89px );}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(165px   179px  ,186px  121px  ,45px    118px  );-webkit-clip-path: polygon(165px   179px  ,186px  121px  ,45px    118px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(165px   179px  ,186px  121px  ,45px    118px  );-webkit-clip-path: polygon(165px   179px  ,186px  121px  ,45px    118px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 227px   58px   ,300px   90px   ,282px   62px);-webkit-clip-path: polygon( 227px   58px   ,300px   90px   ,282px   62px    );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 227px   58px   ,300px   90px   ,282px   62px);-webkit-clip-path: polygon( 227px   58px   ,300px   90px   ,282px   62px    );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(165px   179px  ,186px  121px  ,45px    118px  );-webkit-clip-path: polygon(165px   179px  ,186px  121px  ,45px    118px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(153px   72px    ,226px   82px   , 201px   63px );-webkit-clip-path: polygon(153px   72px    ,226px   82px   , 201px   63px);}
+		90%{-webkit-shape-outside: polygon(153px   72px    ,226px   82px   , 201px   63px );-webkit-clip-path: polygon(153px   72px    ,226px   82px   , 201px   63px);transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(153px   72px    ,226px   82px   , 201px   63px );-webkit-clip-path: polygon(153px   72px    ,226px   82px   , 201px   63px);transform:rotate(360deg);}
+	}
+
+	@-webkit-keyframes p03{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(338px 109px  ,372px  177px ,398px  36px); -webkit-clip-path:polygon(338px  109px  ,372px  177px  ,398px 36px);transform:rotate(30deg);}
+		10%{-webkit-shape-outside:polygon(338px 109px  ,372px  177px ,398px  36px); -webkit-clip-path:polygon(338px  109px  ,372px  177px  ,398px 36px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(321px   87px   ,369px  139px  ,311px   9px    );-webkit-clip-path: polygon(321px   87px   ,369px  139px  ,311px   9px    );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(321px   87px   ,369px  139px  ,311px   9px    );-webkit-clip-path: polygon(321px   87px   ,369px  139px  ,311px   9px    );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 282px   62px   ,315px   120px  ,320px   79px);-webkit-clip-path: polygon( 282px   62px   ,315px   120px  ,320px   79px    );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 282px   62px   ,315px   120px  ,320px   79px);-webkit-clip-path: polygon( 282px   62px   ,315px   120px  ,320px   79px    );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(321px   87px   ,369px  139px  ,311px   9px    );-webkit-clip-path: polygon(321px   87px   ,369px  139px  ,311px   9px    );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(206px   88px    ,230px   124px  , 230px   79px  );-webkit-clip-path: polygon(206px   88px    ,230px   124px  , 230px   79px );}
+		90%{-webkit-shape-outside: polygon(206px   88px    ,230px   124px  , 230px   79px  );-webkit-clip-path: polygon(206px   88px    ,230px   124px  , 230px   79px );transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(206px   88px    ,230px   124px  , 230px   79px  );-webkit-clip-path: polygon(206px   88px    ,230px   124px  , 230px   79px );transform:rotate(360deg);}
+	}
+
+	@-webkit-keyframes p04{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(345px 219px  ,269px 238px  ,331px  192px); -webkit-clip-path:polygon(345px 219px  ,269px 238px  ,331px  192px);transform:rotate(-30deg);}
+		10%{-webkit-shape-outside:polygon(345px 219px  ,269px 238px  ,331px  192px); -webkit-clip-path:polygon(345px 219px  ,269px 238px  ,331px  192px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(379px   286px  ,263px  314px  ,358px   244px  );-webkit-clip-path: polygon(379px   286px  ,263px  314px  ,358px   244px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(379px   286px  ,263px  314px  ,358px   244px  );-webkit-clip-path: polygon(379px   286px  ,263px  314px  ,358px   244px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 218px   247px  ,221px   207px  ,282px   229px);-webkit-clip-path: polygon( 218px   247px  ,221px   207px  ,282px   229px   );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 218px   247px  ,221px   207px  ,282px   229px);-webkit-clip-path: polygon( 218px   247px  ,221px   207px  ,282px   229px   );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(379px   286px  ,263px  314px  ,358px   244px  );-webkit-clip-path: polygon(379px   286px  ,263px  314px  ,358px   244px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(182px   264px   ,153px   231px  , 226px   237px );-webkit-clip-path: polygon(182px   264px   ,153px   231px  , 226px   237px);}
+		90%{-webkit-shape-outside: polygon(182px   264px   ,153px   231px  , 226px   237px );-webkit-clip-path: polygon(182px   264px   ,153px   231px  , 226px   237px);transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(182px   264px   ,153px   231px  , 226px   237px );-webkit-clip-path: polygon(182px   264px   ,153px   231px  , 226px   237px);transform:rotate(360deg);}
+	}
+
+	@-webkit-keyframes p05{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(331px 192px  ,356px 240px  ,373px  201px); -webkit-clip-path:polygon(331px 192px  ,356px 240px  ,373px  201px);transform:rotate(-50deg);}
+		10%{-webkit-shape-outside:polygon(331px 192px  ,356px 240px  ,373px  201px); -webkit-clip-path:polygon(331px 192px  ,356px 240px  ,373px  201px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(275px   107px  ,300px  154px  ,317px   116px  );-webkit-clip-path: polygon(275px   107px  ,300px  154px  ,317px   116px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(275px   107px  ,300px  154px  ,317px   116px  );-webkit-clip-path: polygon(275px   107px  ,300px  154px  ,317px   116px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 238px   242px  ,309px   242px  ,298px   224p);-webkit-clip-path: polygon( 238px   242px  ,309px   242px  ,298px   224px   );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 238px   242px  ,309px   242px  ,298px   224p);-webkit-clip-path: polygon( 238px   242px  ,309px   242px  ,298px   224px   );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(275px   107px  ,300px  154px  ,317px   116px  );-webkit-clip-path: polygon(275px   107px  ,300px  154px  ,317px   116px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(182px   264px   ,258px   244px  , 241px   228px );-webkit-clip-path: polygon(182px   264px   ,258px   244px  , 241px   228px);}
+		90%{-webkit-shape-outside: polygon(182px   264px   ,258px   244px  , 241px   228px );-webkit-clip-path: polygon(182px   264px   ,258px   244px  , 241px   228px);transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(182px   264px   ,258px   244px  , 241px   228px );-webkit-clip-path: polygon(182px   264px   ,258px   244px  , 241px   228px);transform:rotate(360deg);}
+	}
+
+	@-webkit-keyframes p06{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(331px 169px  ,380px 196px  ,359px  154px); -webkit-clip-path:polygon(331px 169px  ,380px 196px  ,359px  154px);transform:rotate(-110deg);}
+		10%{-webkit-shape-outside:polygon(331px 169px  ,380px 196px  ,359px  154px); -webkit-clip-path:polygon(331px 169px  ,380px 196px  ,359px  154px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(295px   199px  ,344px  226px  ,323px   184px  );-webkit-clip-path: polygon(295px   199px  ,344px  226px  ,323px   184px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(295px   199px  ,344px  226px  ,323px   184px  );-webkit-clip-path: polygon(295px   199px  ,344px  226px  ,323px   184px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 298px   224px  ,309px   242px  ,311px   199px);-webkit-clip-path: polygon( 298px   224px  ,309px   242px  ,311px   199px   );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 298px   224px  ,309px   242px  ,311px   199px);-webkit-clip-path: polygon( 298px   224px  ,309px   242px  ,311px   199px   );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(295px   199px  ,344px  226px  ,323px   184px  );-webkit-clip-path: polygon(295px   199px  ,344px  226px  ,323px   184px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(241px   228px   ,258px   244px  , 249px   197px );-webkit-clip-path: polygon(241px   228px   ,258px   244px  , 249px   197px);}
+		90%{-webkit-shape-outside: polygon(241px   228px   ,258px   244px  , 249px   197px );-webkit-clip-path: polygon(241px   228px   ,258px   244px  , 249px   197px);transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(241px   228px   ,258px   244px  , 249px   197px );-webkit-clip-path: polygon(241px   228px   ,258px   244px  , 249px   197px);transform:rotate(-360deg);}
+	}
+
+	@-webkit-keyframes p07{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(373px 66px   ,312px 59px   ,338px  109px); -webkit-clip-path:polygon(373px 66px   ,312px 59px   ,338px  109px);transform:rotate(-150deg);}
+		10%{-webkit-shape-outside:polygon(373px 66px   ,312px 59px   ,338px  109px); -webkit-clip-path:polygon(373px 66px   ,312px 59px   ,338px  109px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(286px   51px   ,226px  44px   ,251px   94px   );-webkit-clip-path: polygon(286px   51px   ,226px  44px   ,251px   94px   );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(286px   51px   ,226px  44px   ,251px   94px   );-webkit-clip-path: polygon(286px   51px   ,226px  44px   ,251px   94px   );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 194px   87px   ,190px   134px  ,244px   68px);-webkit-clip-path: polygon( 194px   87px   ,190px   134px  ,244px   68px    );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 194px   87px   ,190px   134px  ,244px   68px);-webkit-clip-path: polygon( 194px   87px   ,190px   134px  ,244px   68px    );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(286px   51px   ,226px  44px   ,251px   94px   );-webkit-clip-path: polygon(286px   51px   ,226px  44px   ,251px   94px   );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(89px    75px    ,98px    161px  , 125px   61px );-webkit-clip-path: polygon(89px    75px    ,98px    161px  , 125px   61px);}
+		90%{-webkit-shape-outside: polygon(89px    75px    ,98px    161px  , 125px   61px );-webkit-clip-path: polygon(89px    75px    ,98px    161px  , 125px   61px);transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(89px    75px    ,98px    161px  , 125px   61px );-webkit-clip-path: polygon(89px    75px    ,98px    161px  , 125px   61px);transform:rotate(360deg);}
+	}
+
+	@-webkit-keyframes p08{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(301px 186px  ,323px 173px  ,315px  154px); -webkit-clip-path:polygon(301px 186px  ,323px 173px  ,315px  154px);transform:rotate(80deg);}
+		10%{-webkit-shape-outside:polygon(301px 186px  ,323px 173px  ,315px  154px); -webkit-clip-path:polygon(301px 186px  ,323px 173px  ,315px  154px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(398px   146px  ,420px  134px  ,412px   115px  );-webkit-clip-path: polygon(398px   146px  ,420px  134px  ,412px   115px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(398px   146px  ,420px  134px  ,412px   115px  );-webkit-clip-path: polygon(398px   146px  ,420px  134px  ,412px   115px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 164px   170px  ,185px   189px  ,192px   107px);-webkit-clip-path: polygon( 164px   170px  ,185px   189px  ,192px   107px   );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 164px   170px  ,185px   189px  ,192px   107px);-webkit-clip-path: polygon( 164px   170px  ,185px   189px  ,192px   107px   );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(398px   146px  ,420px  134px  ,412px   115px  );-webkit-clip-path: polygon(398px   146px  ,420px  134px  ,412px   115px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(79px    167px   ,104px   210px  , 94px    124px );-webkit-clip-path: polygon(79px    167px   ,104px   210px  , 94px    124px);}
+		90%{-webkit-shape-outside: polygon(79px    167px   ,104px   210px  , 94px    124px );-webkit-clip-path: polygon(79px    167px   ,104px   210px  , 94px    124px);transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(79px    167px   ,104px   210px  , 94px    124px );-webkit-clip-path: polygon(79px    167px   ,104px   210px  , 94px    124px);transform:rotate(-360deg);}
+	}
+
+	@-webkit-keyframes p09{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(192px 226px  ,294px 219px  ,312px  188px); -webkit-clip-path:polygon(192px 226px  ,294px 219px  ,312px  188px);transform:rotate(120deg);}
+		10%{-webkit-shape-outside:polygon(192px 226px  ,294px 219px  ,312px  188px); -webkit-clip-path:polygon(192px 226px  ,294px 219px  ,312px  188px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(44px    315px  ,266px  248px  ,298px   213px  );-webkit-clip-path: polygon(44px    315px  ,266px  248px  ,298px   213px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(44px    315px  ,266px  248px  ,298px   213px  );-webkit-clip-path: polygon(44px    315px  ,266px  248px  ,298px   213px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 184px   199px  ,209px   205px  ,190px   134px);-webkit-clip-path: polygon( 184px   199px  ,209px   205px  ,190px   134px   );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 184px   199px  ,209px   205px  ,190px   134px);-webkit-clip-path: polygon( 184px   199px  ,209px   205px  ,190px   134px   );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(44px    315px  ,266px  248px  ,298px   213px  );-webkit-clip-path: polygon(44px    315px  ,266px  248px  ,298px   213px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(109px   244px   ,139px   236px  , 98px    161px );-webkit-clip-path: polygon(109px   244px   ,139px   236px  , 98px    161px);}
+		90%{-webkit-shape-outside: polygon(109px   244px   ,139px   236px  , 98px    161px );-webkit-clip-path: polygon(109px   244px   ,139px   236px  , 98px    161px);transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(109px   244px   ,139px   236px  , 98px    161px );-webkit-clip-path: polygon(109px   244px   ,139px   236px  , 98px    161px);transform:rotate(-360deg);}
+	}
+
+	@-webkit-keyframes p10{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(246px 112px  ,315px 154px  ,299px  112px); -webkit-clip-path:polygon(246px 112px  ,315px 154px  ,299px  112px);transform:rotate(-170deg);}
+		10%{-webkit-shape-outside:polygon(246px 112px  ,315px 154px  ,299px  112px); -webkit-clip-path:polygon(246px 112px  ,315px 154px  ,299px  112px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(28px    32px   ,97px   74px   ,81px    32px   );-webkit-clip-path: polygon(28px    32px   ,97px   74px   ,81px    32px   );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(28px    32px   ,97px   74px   ,81px    32px   );-webkit-clip-path: polygon(28px    32px   ,97px   74px   ,81px    32px   );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 190px   134px  ,201px   177px  ,220px   97px);-webkit-clip-path: polygon( 190px   134px  ,201px   177px  ,220px   97px    );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 190px   134px  ,201px   177px  ,220px   97px);-webkit-clip-path: polygon( 190px   134px  ,201px   177px  ,220px   97px    );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(28px    32px   ,97px   74px   ,81px    32px   );-webkit-clip-path: polygon(28px    32px   ,97px   74px   ,81px    32px   );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(120px   78px    ,109px   124px  , 148px   73px  );-webkit-clip-path: polygon(120px   78px    ,109px   124px  , 148px   73px );}
+		90%{-webkit-shape-outside: polygon(120px   78px    ,109px   124px  , 148px   73px  );-webkit-clip-path: polygon(120px   78px    ,109px   124px  , 148px   73px );transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(120px   78px    ,109px   124px  , 148px   73px  );-webkit-clip-path: polygon(120px   78px    ,109px   124px  , 148px   73px );transform:rotate(360deg);}
+	}
+
+	@-webkit-keyframes p11{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(294px 219px  ,331px 192px  ,312px  188px); -webkit-clip-path:polygon(294px 219px  ,331px 192px  ,312px  188px);transform:rotate(-80deg);}
+		10%{-webkit-shape-outside:polygon(294px 219px  ,331px 192px  ,312px  188px); -webkit-clip-path:polygon(294px 219px  ,331px 192px  ,312px  188px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(278px   271px  ,315px  244px  ,296px   240px  );-webkit-clip-path: polygon(278px   271px  ,315px  244px  ,296px   240px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(278px   271px  ,315px  244px  ,296px   240px  );-webkit-clip-path: polygon(278px   271px  ,315px  244px  ,296px   240px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 218px   240px  ,220px   208px  ,184px   199px);-webkit-clip-path: polygon( 218px   240px  ,220px   208px  ,184px   199px   );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 218px   240px  ,220px   208px  ,184px   199px);-webkit-clip-path: polygon( 218px   240px  ,220px   208px  ,184px   199px   );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(278px   271px  ,315px  244px  ,296px   240px  );-webkit-clip-path: polygon(278px   271px  ,315px  244px  ,296px   240px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(178px   259px   ,153px   232px  , 109px   244px );-webkit-clip-path: polygon(178px   259px   ,153px   232px  , 109px   244px);}
+		90%{-webkit-shape-outside: polygon(178px   259px   ,153px   232px  , 109px   244px );-webkit-clip-path: polygon(178px   259px   ,153px   232px  , 109px   244px);transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(178px   259px   ,153px   232px  , 109px   244px );-webkit-clip-path: polygon(178px   259px   ,153px   232px  , 109px   244px);transform:rotate(-360deg);}
+	}
+
+	@-webkit-keyframes p12{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(398px 109px  ,389px 84px   ,502px  45px ); -webkit-clip-path:polygon(398px 109px  ,389px 84px   ,502px  45px );transform:rotate(0deg);}
+		10%{-webkit-shape-outside:polygon(398px 109px  ,389px 84px   ,502px  45px ); -webkit-clip-path:polygon(398px 109px  ,389px 84px   ,502px  45px );}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(248px   213px  ,231px  196px  ,249px   134px  );-webkit-clip-path: polygon(248px   213px  ,231px  196px  ,249px   134px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(248px   213px  ,231px  196px  ,249px   134px  );-webkit-clip-path: polygon(248px   213px  ,231px  196px  ,249px   134px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 366px   92px   ,386px   68px   ,435px   72px);-webkit-clip-path: polygon( 366px   92px   ,386px   68px   ,435px   72px    );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 366px   92px   ,386px   68px   ,435px   72px);-webkit-clip-path: polygon( 366px   92px   ,386px   68px   ,435px   72px    );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(248px   213px  ,231px  196px  ,249px   134px  );-webkit-clip-path: polygon(248px   213px  ,231px  196px  ,249px   134px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(384px   106px   ,375px   78px   , 427px   124px );-webkit-clip-path: polygon(384px   106px   ,375px   78px   , 427px   124px);}
+		90%{-webkit-shape-outside: polygon(384px   106px   ,375px   78px   , 427px   124px );-webkit-clip-path: polygon(384px   106px   ,375px   78px   , 427px   124px);transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(384px   106px   ,375px   78px   , 427px   124px );-webkit-clip-path: polygon(384px   106px   ,375px   78px   , 427px   124px);transform:rotate(460deg);}
+	}
+
+	@-webkit-keyframes p13{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(433px 152px  ,482px 122px  ,442px  81px ); -webkit-clip-path:polygon(433px 152px  ,482px 122px  ,442px  81px );transform:rotate(-330deg);}
+		10%{-webkit-shape-outside:polygon(433px 152px  ,482px 122px  ,442px  81px ); -webkit-clip-path:polygon(433px 152px  ,482px 122px  ,442px  81px );}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(477px   78px   ,504px  52px   ,482px   17px   );-webkit-clip-path: polygon(477px   78px   ,504px  52px   ,482px   17px   );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(477px   78px   ,504px  52px   ,482px   17px   );-webkit-clip-path: polygon(477px   78px   ,504px  52px   ,482px   17px   );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 409px   79px   ,450px   105px  ,435px   72px);-webkit-clip-path: polygon( 409px   79px   ,450px   105px  ,435px   72px    );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 409px   79px   ,450px   105px  ,435px   72px);-webkit-clip-path: polygon( 409px   79px   ,450px   105px  ,435px   72px    );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(477px   78px   ,504px  52px   ,482px   17px   );-webkit-clip-path: polygon(477px   78px   ,504px  52px   ,482px   17px   );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(348px   77px    ,384px   106px  , 374px   73px  );-webkit-clip-path: polygon(348px   77px    ,384px   106px  , 374px   73px );}
+		90%{-webkit-shape-outside: polygon(348px   77px    ,384px   106px  , 374px   73px  );-webkit-clip-path: polygon(348px   77px    ,384px   106px  , 374px   73px );transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(348px   77px    ,384px   106px  , 374px   73px  );-webkit-clip-path: polygon(348px   77px    ,384px   106px  , 374px   73px );transform:rotate(-460deg);}
+	}
+
+	@-webkit-keyframes p14{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(472px 112px  ,462px 69px   ,442px  81px ); -webkit-clip-path:polygon(472px 112px  ,462px 69px   ,442px  81px );transform:rotate(123deg);}
+		10%{-webkit-shape-outside:polygon(472px 112px  ,462px 69px   ,442px  81px ); -webkit-clip-path:polygon(472px 112px  ,462px 69px   ,442px  81px );}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(565px   180px  ,555px  137px  ,535px   149px  );-webkit-clip-path: polygon(565px   180px  ,555px  137px  ,535px   149px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(565px   180px  ,555px  137px  ,535px   149px  );-webkit-clip-path: polygon(565px   180px  ,555px  137px  ,535px   149px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 464px   136px  ,474px   108px  ,435px   72px);-webkit-clip-path: polygon( 464px   136px  ,474px   108px  ,435px   72px    );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 464px   136px  ,474px   108px  ,435px   72px);-webkit-clip-path: polygon( 464px   136px  ,474px   108px  ,435px   72px    );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(565px   180px  ,555px  137px  ,535px   149px  );-webkit-clip-path: polygon(565px   180px  ,555px  137px  ,535px   149px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(425px   237px   ,427px   124px  , 397px   111px );-webkit-clip-path: polygon(425px   237px   ,427px   124px  , 397px   111px);}
+		90%{-webkit-shape-outside: polygon(425px   237px   ,427px   124px  , 397px   111px );-webkit-clip-path: polygon(425px   237px   ,427px   124px  , 397px   111px);transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(425px   237px   ,427px   124px  , 397px   111px );-webkit-clip-path: polygon(425px   237px   ,427px   124px  , 397px   111px);transform:rotate(360deg);}
+	}
+
+	@-webkit-keyframes p15{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(301px 186px  ,331px 169px  ,400px  207px); -webkit-clip-path:polygon(301px 186px  ,331px 169px  ,400px  207px);transform:rotate(66deg);}
+		10%{-webkit-shape-outside:polygon(301px 186px  ,331px 169px  ,400px  207px); -webkit-clip-path:polygon(301px 186px  ,331px 169px  ,400px  207px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(123px   86px   ,153px  69px   ,222px   107px  );-webkit-clip-path: polygon(123px   86px   ,153px  69px   ,222px   107px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(123px   86px   ,153px  69px   ,222px   107px  );-webkit-clip-path: polygon(123px   86px   ,153px  69px   ,222px   107px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 346px   224px  ,353px   194px  ,368px   235px);-webkit-clip-path: polygon( 346px   224px  ,353px   194px  ,368px   235px   );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 346px   224px  ,353px   194px  ,368px   235px);-webkit-clip-path: polygon( 346px   224px  ,353px   194px  ,368px   235px   );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(123px   86px   ,153px  69px   ,222px   107px  );-webkit-clip-path: polygon(123px   86px   ,153px  69px   ,222px   107px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(271px   205px   ,293px   146px  , 286px   231px );-webkit-clip-path: polygon(271px   205px   ,293px   146px  , 286px   231px);}
+		90%{-webkit-shape-outside: polygon(271px   205px   ,293px   146px  , 286px   231px );-webkit-clip-path: polygon(271px   205px   ,293px   146px  , 286px   231px);transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(271px   205px   ,293px   146px  , 286px   231px );-webkit-clip-path: polygon(271px   205px   ,293px   146px  , 286px   231px);transform:rotate(360deg);}
+	}
+
+	@-webkit-keyframes p16{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(380px 196px  ,431px 226px  ,426px  188px); -webkit-clip-path:polygon(380px 196px  ,431px 226px  ,426px  188px);transform:rotate(88deg);}
+		10%{-webkit-shape-outside:polygon(380px 196px  ,431px 226px  ,426px  188px); -webkit-clip-path:polygon(380px 196px  ,431px 226px  ,426px  188px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(395px   176px  ,417px  202px  ,415px   168px  );-webkit-clip-path: polygon(395px   176px  ,417px  202px  ,415px   168px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(395px   176px  ,417px  202px  ,415px   168px  );-webkit-clip-path: polygon(395px   176px  ,417px  202px  ,415px   168px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 396px   247px  ,464px   247px  ,429px   232px);-webkit-clip-path: polygon( 396px   247px  ,464px   247px  ,429px   232px   );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 396px   247px  ,464px   247px  ,429px   232px);-webkit-clip-path: polygon( 396px   247px  ,464px   247px  ,429px   232px   );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(395px   176px  ,417px  202px  ,415px   168px  );-webkit-clip-path: polygon(395px   176px  ,417px  202px  ,415px   168px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(457px   146px   ,492px   173px  , 501px   252px );-webkit-clip-path: polygon(457px   146px   ,492px   173px  , 501px   252px);}
+		90%{-webkit-shape-outside: polygon(457px   146px   ,492px   173px  , 501px   252px );-webkit-clip-path: polygon(457px   146px   ,492px   173px  , 501px   252px);transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(457px   146px   ,492px   173px  , 501px   252px );-webkit-clip-path: polygon(457px   146px   ,492px   173px  , 501px   252px);transform:rotate(360deg);}
+	}
+
+	@-webkit-keyframes p17{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(430px 219px  ,514px 256px  ,426px  188px); -webkit-clip-path:polygon(430px 219px  ,514px 256px  ,426px  188px);transform:rotate(-56deg);}
+		10%{-webkit-shape-outside:polygon(430px 219px  ,514px 256px  ,426px  188px); -webkit-clip-path:polygon(430px 219px  ,514px 256px  ,426px  188px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(506px   276px  ,590px  314px  ,502px   245px  );-webkit-clip-path: polygon(506px   276px  ,590px  314px  ,502px   245px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(506px   276px  ,590px  314px  ,502px   245px  );-webkit-clip-path: polygon(506px   276px  ,590px  314px  ,502px   245px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 464px   247px  ,474px   209px  ,430px   161px);-webkit-clip-path: polygon( 464px   247px  ,474px   209px  ,430px   161px   );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 464px   247px  ,474px   209px  ,430px   161px);-webkit-clip-path: polygon( 464px   247px  ,474px   209px  ,430px   161px   );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(506px   276px  ,590px  314px  ,502px   245px  );-webkit-clip-path: polygon(506px   276px  ,590px  314px  ,502px   245px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(492px   67px    ,467px   125px  , 443px   33px  );-webkit-clip-path: polygon(492px   67px    ,467px   125px  , 443px   33px );}
+		90%{-webkit-shape-outside: polygon(492px   67px    ,467px   125px  , 443px   33px  );-webkit-clip-path: polygon(492px   67px    ,467px   125px  , 443px   33px );transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(492px   67px    ,467px   125px  , 443px   33px  );-webkit-clip-path: polygon(492px   67px    ,467px   125px  , 443px   33px );transform:rotate(360deg);}
+	}
+
+	@-webkit-keyframes p18{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(389px 84px   ,379px 136px  ,398px  109px); -webkit-clip-path:polygon(389px 84px   ,379px 136px  ,398px  109px);transform:rotate(-86deg);}
+		10%{-webkit-shape-outside:polygon(389px 84px   ,379px 136px  ,398px  109px); -webkit-clip-path:polygon(389px 84px   ,379px 136px  ,398px  109px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(361px   142px  ,352px  195px  ,370px   167px  );-webkit-clip-path: polygon(361px   142px  ,352px  195px  ,370px   167px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(361px   142px  ,352px  195px  ,370px   167px  );-webkit-clip-path: polygon(361px   142px  ,352px  195px  ,370px   167px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 356px   94px   ,353px   136px  ,409px   79px);-webkit-clip-path: polygon( 356px   94px   ,353px   136px  ,409px   79px    );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 356px   94px   ,353px   136px  ,409px   79px);-webkit-clip-path: polygon( 356px   94px   ,353px   136px  ,409px   79px    );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(361px   142px  ,352px  195px  ,370px   167px  );-webkit-clip-path: polygon(361px   142px  ,352px  195px  ,370px   167px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(297px   86px    ,290px   125px  , 348px   78px  );-webkit-clip-path: polygon(297px   86px    ,290px   125px  , 348px   78px );}
+		90%{-webkit-shape-outside: polygon(297px   86px    ,290px   125px  , 348px   78px  );-webkit-clip-path: polygon(297px   86px    ,290px   125px  , 348px   78px );transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(297px   86px    ,290px   125px  , 348px   78px  );-webkit-clip-path: polygon(297px   86px    ,290px   125px  , 348px   78px );transform:rotate(-360deg);}
+	}
+
+	@-webkit-keyframes p19{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(398px 109px  ,442px 81px   ,433px  152px); -webkit-clip-path:polygon(398px 109px  ,442px 81px   ,433px  152px);transform:rotate(98deg);}
+		10%{-webkit-shape-outside:polygon(398px 109px  ,442px 81px   ,433px  152px); -webkit-clip-path:polygon(398px 109px  ,442px 81px   ,433px  152px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(411px   66px   ,428px  17px   ,425px   145px  );-webkit-clip-path: polygon(411px   66px   ,428px  17px   ,425px   145px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(411px   66px   ,428px  17px   ,425px   145px  );-webkit-clip-path: polygon(411px   66px   ,428px  17px   ,425px   145px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 410px   185px  ,430px   161px  ,450px   212px);-webkit-clip-path: polygon( 410px   185px  ,430px   161px  ,450px   212px   );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 410px   185px  ,430px   161px  ,450px   212px);-webkit-clip-path: polygon( 410px   185px  ,430px   161px  ,450px   212px   );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(411px   66px   ,428px  17px   ,425px   145px  );-webkit-clip-path: polygon(411px   66px   ,428px  17px   ,425px   145px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(348px   249px   ,416px   195px  , 425px   237px );-webkit-clip-path: polygon(348px   249px   ,416px   195px  , 425px   237px);}
+		90%{-webkit-shape-outside: polygon(348px   249px   ,416px   195px  , 425px   237px );-webkit-clip-path: polygon(348px   249px   ,416px   195px  , 425px   237px);transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(348px   249px   ,416px   195px  , 425px   237px );-webkit-clip-path: polygon(348px   249px   ,416px   195px  , 425px   237px);transform:rotate(-460deg);}
+	}
+
+	@-webkit-keyframes p20{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(373px 201px  ,411px 295px  ,400px  207px); -webkit-clip-path:polygon(373px 201px  ,411px 295px  ,400px  207px);transform:rotate(-12deg);}
+		10%{-webkit-shape-outside:polygon(373px 201px  ,411px 295px  ,400px  207px); -webkit-clip-path:polygon(373px 201px  ,411px 295px  ,400px  207px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(382px   219px  ,420px  313px  ,409px   225px  );-webkit-clip-path: polygon(382px   219px  ,420px  313px  ,409px   225px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(382px   219px  ,420px  313px  ,409px   225px  );-webkit-clip-path: polygon(382px   219px  ,420px  313px  ,409px   225px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 364px   223px  ,378px   256px  ,417px   237px);-webkit-clip-path: polygon( 364px   223px  ,378px   256px  ,417px   237px   );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 364px   223px  ,378px   256px  ,417px   237px);-webkit-clip-path: polygon( 364px   223px  ,378px   256px  ,417px   237px   );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(382px   219px  ,420px  313px  ,409px   225px  );-webkit-clip-path: polygon(382px   219px  ,420px  313px  ,409px   225px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(289px   192px   ,286px   231px  , 348px   249px );-webkit-clip-path: polygon(289px   192px   ,286px   231px  , 348px   249px);}
+		90%{-webkit-shape-outside: polygon(289px   192px   ,286px   231px  , 348px   249px );-webkit-clip-path: polygon(289px   192px   ,286px   231px  , 348px   249px);transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(289px   192px   ,286px   231px  , 348px   249px );-webkit-clip-path: polygon(289px   192px   ,286px   231px  , 348px   249px);transform:rotate(360deg);}
+	}
+
+	@-webkit-keyframes p21{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(372px 177px  ,380px 196px  ,477px  177px); -webkit-clip-path:polygon(372px 177px  ,380px 196px  ,477px  177px);transform:rotate(2deg);}
+		10%{-webkit-shape-outside:polygon(372px 177px  ,380px 196px  ,477px  177px); -webkit-clip-path:polygon(372px 177px  ,380px 196px  ,477px  177px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(128px   199px  ,133px  224px  ,191px   199px  );-webkit-clip-path: polygon(128px   199px  ,133px  224px  ,191px   199px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(128px   199px  ,133px  224px  ,191px   199px  );-webkit-clip-path: polygon(128px   199px  ,133px  224px  ,191px   199px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 353px   136px  ,410px   185px  ,372px   116px);-webkit-clip-path: polygon( 353px   136px  ,410px   185px  ,372px   116px   );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 353px   136px  ,410px   185px  ,372px   116px);-webkit-clip-path: polygon( 353px   136px  ,410px   185px  ,372px   116px   );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(128px   199px  ,133px  224px  ,191px   199px  );-webkit-clip-path: polygon(128px   199px  ,133px  224px  ,191px   199px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(273px   138px   ,285px   167px  , 308px   110px );-webkit-clip-path: polygon(273px   138px   ,285px   167px  , 308px   110px);}
+		90%{-webkit-shape-outside: polygon(273px   138px   ,285px   167px  , 308px   110px );-webkit-clip-path: polygon(273px   138px   ,285px   167px  , 308px   110px);transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(273px   138px   ,285px   167px  , 308px   110px );-webkit-clip-path: polygon(273px   138px   ,285px   167px  , 308px   110px);transform:rotate(-560deg);}
+	}
+
+	@-webkit-keyframes p22{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(398px 109px  ,453px 177px  ,379px  136px); -webkit-clip-path:polygon(398px 109px  ,453px 177px  ,379px  136px);transform:rotate(-321deg);}
+		10%{-webkit-shape-outside:polygon(398px 109px  ,453px 177px  ,379px  136px); -webkit-clip-path:polygon(398px 109px  ,453px 177px  ,379px  136px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(377px   135px  ,416px  161px  ,375px   153px  );-webkit-clip-path: polygon(377px   135px  ,416px  161px  ,375px   153px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(377px   135px  ,416px  161px  ,375px   153px  );-webkit-clip-path: polygon(377px   135px  ,416px  161px  ,375px   153px  );}
+		/*變CSS*/
+		32%{webkit-shape-outside: polygon( 430px   161px  ,410px   185px  ,383px   136px);-webkit-clip-path: polygon( 430px   161px  ,410px   185px  ,383px   136px   );transform:rotate(0deg);}
+		68%{webkit-shape-outside: polygon( 430px   161px  ,410px   185px  ,383px   136px);-webkit-clip-path: polygon( 430px   161px  ,410px   185px  ,383px   136px   );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(377px   135px  ,416px  161px  ,375px   153px  );-webkit-clip-path: polygon(377px   135px  ,416px  161px  ,375px   153px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(492px   173px   ,457px   146px  , 492px   67px  );-webkit-clip-path: polygon(492px   173px   ,457px   146px  , 492px   67px );}
+		90%{-webkit-shape-outside: polygon(492px   173px   ,457px   146px  , 492px   67px  );-webkit-clip-path: polygon(492px   173px   ,457px   146px  , 492px   67px );transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(492px   173px   ,457px   146px  , 492px   67px  );-webkit-clip-path: polygon(492px   173px   ,457px   146px  , 492px   67px );transform:rotate(360deg);}
+	}
+
+	@-webkit-keyframes p23{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(468px 96px   ,462px 69px   ,558px  89px ); -webkit-clip-path:polygon(468px 96px   ,462px 69px   ,558px  89px );transform:rotate(-310deg);}
+		10%{-webkit-shape-outside:polygon(468px 96px   ,462px 69px   ,558px  89px ); -webkit-clip-path:polygon(468px 96px   ,462px 69px   ,558px  89px );}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(675px   108px  ,669px  81px   ,765px   101px  );-webkit-clip-path: polygon(675px   108px  ,669px  81px   ,765px   101px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(675px   108px  ,669px  81px   ,765px   101px  );-webkit-clip-path: polygon(675px   108px  ,669px  81px   ,765px   101px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 514px   97px   ,532px   72px   ,589px   71px);-webkit-clip-path: polygon( 514px   97px   ,532px   72px   ,589px   71px    );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 514px   97px   ,532px   72px   ,589px   71px);-webkit-clip-path: polygon( 514px   97px   ,532px   72px   ,589px   71px    );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(675px   108px  ,669px  81px   ,765px   101px  );-webkit-clip-path: polygon(675px   108px  ,669px  81px   ,765px   101px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(661px   166px   ,699px   149px  , 731px   173px );-webkit-clip-path: polygon(661px   166px   ,699px   149px  , 731px   173px);}
+		90%{-webkit-shape-outside: polygon(661px   166px   ,699px   149px  , 731px   173px );-webkit-clip-path: polygon(661px   166px   ,699px   149px  , 731px   173px);transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(661px   166px   ,699px   149px  , 731px   173px );-webkit-clip-path: polygon(661px   166px   ,699px   149px  , 731px   173px);transform:rotate(-460deg);}
+	}
+
+	@-webkit-keyframes p24{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(468px 96px   ,482px 122px  ,526px  92px ); -webkit-clip-path:polygon(468px 96px   ,482px 122px  ,526px  92px );transform:rotate(413deg);}
+		10%{-webkit-shape-outside:polygon(468px 96px   ,482px 122px  ,526px  92px ); -webkit-clip-path:polygon(468px 96px   ,482px 122px  ,526px  92px );}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(544px   43px   ,558px  68px   ,602px   38px  );-webkit-clip-path: polygon(544px   43px   ,558px  68px   ,602px   38px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(544px   43px   ,558px  68px   ,602px   38px  );-webkit-clip-path: polygon(544px   43px   ,558px  68px   ,602px   38px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 563px   80px   ,611px   106px  ,597px   65px);-webkit-clip-path: polygon( 563px   80px   ,611px   106px  ,597px   65px    );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 563px   80px   ,611px   106px  ,597px   65px);-webkit-clip-path: polygon( 563px   80px   ,611px   106px  ,597px   65px    );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(544px   43px   ,558px  68px   ,602px   38px  );-webkit-clip-path: polygon(544px   43px   ,558px  68px   ,602px   38px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(652px   92px    ,745px   100px  , 734px   81px  );-webkit-clip-path: polygon(652px   92px    ,745px   100px  , 734px   81px );}
+		90%{-webkit-shape-outside: polygon(652px   92px    ,745px   100px  , 734px   81px  );-webkit-clip-path: polygon(652px   92px    ,745px   100px  , 734px   81px );transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(652px   92px    ,745px   100px  , 734px   81px  );-webkit-clip-path: polygon(652px   92px    ,745px   100px  , 734px   81px );transform:rotate(360deg);}
+	}
+
+	@-webkit-keyframes p25{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(453px 177px  ,487px 177px  ,433px  152px); -webkit-clip-path:polygon(453px 177px  ,487px 177px  ,433px  152px);transform:rotate(0deg);}
+		10%{-webkit-shape-outside:polygon(453px 177px  ,487px 177px  ,433px  152px); -webkit-clip-path:polygon(453px 177px  ,487px 177px  ,433px  152px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(495px   174px  ,529px  174px  ,475px   149px  );-webkit-clip-path: polygon(495px   174px  ,529px  174px  ,475px   149px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(495px   174px  ,529px  174px  ,475px   149px  );-webkit-clip-path: polygon(495px   174px  ,529px  174px  ,475px   149px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 615px   131px  ,623px   102px  ,597px   65px);-webkit-clip-path: polygon( 615px   131px  ,623px   102px  ,597px   65px    );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 615px   131px  ,623px   102px  ,597px   65px);-webkit-clip-path: polygon( 615px   131px  ,623px   102px  ,597px   65px    );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(495px   174px  ,529px  174px  ,475px   149px  );-webkit-clip-path: polygon(495px   174px  ,529px  174px  ,475px   149px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(691px   230px   ,647px   223px  , 648px   239px );-webkit-clip-path: polygon(691px   230px   ,647px   223px  , 648px   239px);}
+		90%{-webkit-shape-outside: polygon(691px   230px   ,647px   223px  , 648px   239px );-webkit-clip-path: polygon(691px   230px   ,647px   223px  , 648px   239px);transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(691px   230px   ,647px   223px  , 648px   239px );-webkit-clip-path: polygon(691px   230px   ,647px   223px  , 648px   239px);transform:rotate(360deg);}
+	}
+
+	@-webkit-keyframes p26{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(426px 188px  ,487px 177px  ,442px  200px); -webkit-clip-path:polygon(426px 188px  ,487px 177px  ,442px  200px);transform:rotate(0deg);}
+		10%{-webkit-shape-outside:polygon(426px 188px  ,487px 177px  ,442px  200px); -webkit-clip-path:polygon(426px 188px  ,487px 177px  ,442px  200px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(538px   246px  ,447px  164px  ,528px   213px  );-webkit-clip-path: polygon(538px   246px  ,447px  164px  ,528px   213px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(538px   246px  ,447px  164px  ,528px   213px  );-webkit-clip-path: polygon(538px   246px  ,447px  164px  ,528px   213px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 517px   229px  ,518px   208px  ,542px   251px);-webkit-clip-path: polygon( 517px   229px  ,518px   208px  ,542px   251px   );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 517px   229px  ,518px   208px  ,542px   251px);-webkit-clip-path: polygon( 517px   229px  ,518px   208px  ,542px   251px   );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(538px   246px  ,447px  164px  ,528px   213px  );-webkit-clip-path: polygon(538px   246px  ,447px  164px  ,528px   213px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(551px   75px    ,491px   149px  , 579px   102px );-webkit-clip-path: polygon(551px   75px    ,491px   149px  , 579px   102px);}
+		90%{-webkit-shape-outside: polygon(551px   75px    ,491px   149px  , 579px   102px );-webkit-clip-path: polygon(551px   75px    ,491px   149px  , 579px   102px);transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(551px   75px    ,491px   149px  , 579px   102px );-webkit-clip-path: polygon(551px   75px    ,491px   149px  , 579px   102px);transform:rotate(-360deg);}
+	}
+
+	@-webkit-keyframes p27{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(482px 204px  ,558px 211px  ,487px  177px); -webkit-clip-path:polygon(482px 204px  ,558px 211px  ,487px  177px);transform:rotate(0deg);}
+		10%{-webkit-shape-outside:polygon(482px 204px  ,558px 211px  ,487px  177px); -webkit-clip-path:polygon(482px 204px  ,558px 211px  ,487px  177px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(573px   215px  ,649px  222px  ,579px   189px  );-webkit-clip-path: polygon(573px   215px  ,649px  222px  ,579px   189px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(573px   215px  ,649px  222px  ,579px   189px  );-webkit-clip-path: polygon(573px   215px  ,649px  222px  ,579px   189px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 584px   258px  ,626px   239px  ,563px   246px);-webkit-clip-path: polygon( 584px   258px  ,626px   239px  ,563px   246px   );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 584px   258px  ,626px   239px  ,563px   246px);-webkit-clip-path: polygon( 584px   258px  ,626px   239px  ,563px   246px   );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(573px   215px  ,649px  222px  ,579px   189px  );-webkit-clip-path: polygon(573px   215px  ,649px  222px  ,579px   189px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(463px   254px   ,501px   252px  , 468px   172px );-webkit-clip-path: polygon(463px   254px   ,501px   252px  , 468px   172px);}
+		90%{-webkit-shape-outside: polygon(463px   254px   ,501px   252px  , 468px   172px );-webkit-clip-path: polygon(463px   254px   ,501px   252px  , 468px   172px);transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(463px   254px   ,501px   252px  , 468px   172px );-webkit-clip-path: polygon(463px   254px   ,501px   252px  , 468px   172px);transform:rotate(-720deg);}
+	}
+
+	@-webkit-keyframes p28{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(592px 261px  ,482px 204px  ,477px  227px); -webkit-clip-path:polygon(592px 261px  ,482px 204px  ,477px  227px);transform:rotate(0deg);}
+		10%{-webkit-shape-outside:polygon(592px 261px  ,482px 204px  ,477px  227px); -webkit-clip-path:polygon(592px 261px  ,482px 204px  ,477px  227px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(775px   308px  ,664px  250px  ,659px   274px  );-webkit-clip-path: polygon(775px   308px  ,664px  250px  ,659px   274px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(775px   308px  ,664px  250px  ,659px   274px  );-webkit-clip-path: polygon(775px   308px  ,664px  250px  ,659px   274px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 626px   239px  ,633px   201px  ,597px   158px);-webkit-clip-path: polygon( 626px   239px  ,633px   201px  ,597px   158px   );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 626px   239px  ,633px   201px  ,597px   158px);-webkit-clip-path: polygon( 626px   239px  ,633px   201px  ,597px   158px   );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(775px   308px  ,664px  250px  ,659px   274px  );-webkit-clip-path: polygon(775px   308px  ,664px  250px  ,659px   274px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(594px   251px   ,734px   261px  , 702px   228px );-webkit-clip-path: polygon(594px   251px   ,734px   261px  , 702px   228px);}
+		90%{-webkit-shape-outside: polygon(594px   251px   ,734px   261px  , 702px   228px );-webkit-clip-path: polygon(594px   251px   ,734px   261px  , 702px   228px);transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(594px   251px   ,734px   261px  , 702px   228px );-webkit-clip-path: polygon(594px   251px   ,734px   261px  , 702px   228px);transform:rotate(720deg);}
+	}
+
+	@-webkit-keyframes p29{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(468px 96px   ,472px 112px  ,482px  122px); -webkit-clip-path:polygon(468px 96px   ,472px 112px  ,482px  122px);transform:rotate(0deg);}
+		10%{-webkit-shape-outside:polygon(468px 96px   ,472px 112px  ,482px  122px); -webkit-clip-path:polygon(468px 96px   ,472px 112px  ,482px  122px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(416px   144px  ,427px  170px  ,455px   185px  );-webkit-clip-path: polygon(416px   144px  ,427px  170px  ,455px   185px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(416px   144px  ,427px  170px  ,455px   185px  );-webkit-clip-path: polygon(416px   144px  ,427px  170px  ,455px   185px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 514px   97px   ,512px   125px  ,563px   80px);-webkit-clip-path: polygon( 514px   97px   ,512px   125px  ,563px   80px    );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 514px   97px   ,512px   125px  ,563px   80px);-webkit-clip-path: polygon( 514px   97px   ,512px   125px  ,563px   80px    );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(416px   144px  ,427px  170px  ,455px   185px  );-webkit-clip-path: polygon(416px   144px  ,427px  170px  ,455px   185px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(628px   72px    ,632px   94px   , 722px   82px  );-webkit-clip-path: polygon(628px   72px    ,632px   94px   , 722px   82px );}
+		90%{-webkit-shape-outside: polygon(628px   72px    ,632px   94px   , 722px   82px  );-webkit-clip-path: polygon(628px   72px    ,632px   94px   , 722px   82px );transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(628px   72px    ,632px   94px   , 722px   82px  );-webkit-clip-path: polygon(628px   72px    ,632px   94px   , 722px   82px );transform:rotate(-600deg);}
+	}
+
+	@-webkit-keyframes p30{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(433px 152px  ,584px 170px  ,526px  196px); -webkit-clip-path:polygon(433px 152px  ,584px 170px  ,526px  196px);transform:rotate(0deg);}
+		10%{-webkit-shape-outside:polygon(433px 152px  ,584px 170px  ,526px  196px); -webkit-clip-path:polygon(433px 152px  ,584px 170px  ,526px  196px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(603px   176px  ,753px  193px  ,696px   219px  );-webkit-clip-path: polygon(603px   176px  ,753px  193px  ,696px   219px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(603px   176px  ,753px  193px  ,696px   219px  );-webkit-clip-path: polygon(603px   176px  ,753px  193px  ,696px   219px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 543px   171px  ,597px   158px  ,606px   181px);-webkit-clip-path: polygon( 543px   171px  ,597px   158px  ,606px   181px   );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 543px   171px  ,597px   158px  ,606px   181px);-webkit-clip-path: polygon( 543px   171px  ,597px   158px  ,606px   181px   );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(603px   176px  ,753px  193px  ,696px   219px  );-webkit-clip-path: polygon(603px   176px  ,753px  193px  ,696px   219px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(642px   154px   ,648px   239px  , 605px   249px );-webkit-clip-path: polygon(642px   154px   ,648px   239px  , 605px   249px);}
+		90%{-webkit-shape-outside: polygon(642px   154px   ,648px   239px  , 605px   249px );-webkit-clip-path: polygon(642px   154px   ,648px   239px  , 605px   249px);transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(642px   154px   ,648px   239px  , 605px   249px );-webkit-clip-path: polygon(642px   154px   ,648px   239px  , 605px   249px);transform:rotate(360deg);}
+	}
+
+	@-webkit-keyframes p31{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(442px 200px  ,477px 227px  ,487px  177px); -webkit-clip-path:polygon(442px 200px  ,477px 227px  ,487px  177px);transform:rotate(0deg);}
+		10%{-webkit-shape-outside:polygon(442px 200px  ,477px 227px  ,487px  177px); -webkit-clip-path:polygon(442px 200px  ,477px 227px  ,487px  177px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(440px   248px  ,474px  275px  ,484px   225px  );-webkit-clip-path: polygon(440px   248px  ,474px  275px  ,484px   225px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(440px   248px  ,474px  275px  ,484px   225px  );-webkit-clip-path: polygon(440px   248px  ,474px  275px  ,484px   225px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 542px   251px  ,584px   258px  ,528px   225px);-webkit-clip-path: polygon( 542px   251px  ,584px   258px  ,528px   225px   );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 542px   251px  ,584px   258px  ,528px   225px);-webkit-clip-path: polygon( 542px   251px  ,584px   258px  ,528px   225px   );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(440px   248px  ,474px  275px  ,484px   225px  );-webkit-clip-path: polygon(440px   248px  ,474px  275px  ,484px   225px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(558px   222px   ,606px   210px  , 491px   149px );-webkit-clip-path: polygon(558px   222px   ,606px   210px  , 491px   149px);}
+		90%{-webkit-shape-outside: polygon(558px   222px   ,606px   210px  , 491px   149px );-webkit-clip-path: polygon(558px   222px   ,606px   210px  , 491px   149px);transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(558px   222px   ,606px   210px  , 491px   149px );-webkit-clip-path: polygon(558px   222px   ,606px   210px  , 491px   149px);transform:rotate(-660deg);}
+	}
+
+	@-webkit-keyframes p32{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(433px 152px  ,541px 120px  ,502px  109px); -webkit-clip-path:polygon(433px 152px  ,541px 120px  ,502px  109px);transform:rotate(0deg);}
+		10%{-webkit-shape-outside:polygon(433px 152px  ,541px 120px  ,502px  109px); -webkit-clip-path:polygon(433px 152px  ,541px 120px  ,502px  109px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(672px   181px  ,780px  148px  ,741px   137px  );-webkit-clip-path: polygon(672px   181px  ,780px  148px  ,741px   137px  );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(672px   181px  ,780px  148px  ,741px   137px  );-webkit-clip-path: polygon(672px   181px  ,780px  148px  ,741px   137px  );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 512px   125px  ,533px   168px  ,531px   108px);-webkit-clip-path: polygon( 512px   125px  ,533px   168px  ,531px   108px   );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 512px   125px  ,533px   168px  ,531px   108px);-webkit-clip-path: polygon( 512px   125px  ,533px   168px  ,531px   108px   );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(672px   181px  ,780px  148px  ,741px   137px  );-webkit-clip-path: polygon(672px   181px  ,780px  148px  ,741px   137px  );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(610px   236px   ,642px   159px  , 630px   84px  );-webkit-clip-path: polygon(610px   236px   ,642px   159px  , 630px   84px );}
+		90%{-webkit-shape-outside: polygon(610px   236px   ,642px   159px  , 630px   84px  );-webkit-clip-path: polygon(610px   236px   ,642px   159px  , 630px   84px );transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(610px   236px   ,642px   159px  , 630px   84px  );-webkit-clip-path: polygon(610px   236px   ,642px   159px  , 630px   84px );transform:rotate(360deg);}
+	}
+
+	@-webkit-keyframes p33{
+		/*停留*/
+		0%{-webkit-shape-outside:polygon(510px 161px  ,433px 152px  ,564px  112px); -webkit-clip-path:polygon(510px 161px  ,433px 152px  ,564px  112px);transform:rotate(0deg);}
+		10%{-webkit-shape-outside:polygon(510px 161px  ,433px 152px  ,564px  112px); -webkit-clip-path:polygon(510px 161px  ,433px 152px  ,564px  112px);}
+		/*爆炸*/
+		19%{-webkit-shape-outside: polygon(595px   116px  ,441px  151px  ,689px   39px   );-webkit-clip-path: polygon(595px   116px  ,441px  151px  ,689px   39px   );transform:rotate(360deg);}
+		30%{-webkit-shape-outside: polygon(595px   116px  ,441px  151px  ,689px   39px   );-webkit-clip-path: polygon(595px   116px  ,441px  151px  ,689px   39px   );}
+		/*變CSS*/
+		32%{-webkit-shape-outside: polygon( 598px   158px  ,534px   173px  ,532px   147px);-webkit-clip-path: polygon( 598px   158px  ,534px   173px  ,532px   147px   );transform:rotate(0deg);}
+		68%{-webkit-shape-outside: polygon( 598px   158px  ,534px   173px  ,532px   147px);-webkit-clip-path: polygon( 598px   158px  ,534px   173px  ,532px   147px   );transform:rotate(0deg);}
+		/*再爆炸*/
+		70%{-webkit-shape-outside: polygon(595px   116px  ,441px  151px  ,689px   39px   );-webkit-clip-path: polygon(595px   116px  ,441px  151px  ,689px   39px   );}
+		/*變可樂*/
+		72%{-webkit-shape-outside: polygon(688px   154px   ,643px   174px  , 639px   135px );-webkit-clip-path: polygon(688px   154px   ,643px   174px  , 639px   135px);}
+		90%{-webkit-shape-outside: polygon(688px   154px   ,643px   174px  , 639px   135px );-webkit-clip-path: polygon(688px   154px   ,643px   174px  , 639px   135px);transform:rotate(0deg);}
+		100%{-webkit-shape-outside: polygon(688px   154px   ,643px   174px  , 639px   135px );-webkit-clip-path: polygon(688px   154px   ,643px   174px  , 639px   135px);transform:rotate(360deg);}
+	}
+
+	</style>
+</head>
+<body>
+	<div class="info">Pure CSS<br><small>CSS by csscoke.com</small></div>	
+	<div class="box">
+		<div class="p01"></div>
+		<div class="p02"></div>
+		<div class="p03"></div>
+		<div class="p04"></div>
+		<div class="p05"></div>
+		<div class="p06"></div>
+		<div class="p07"></div>
+		<div class="p08"></div>
+		<div class="p09"></div>
+		<div class="p10"></div>
+		<div class="p11"></div>
+		<div class="p12"></div>
+		<div class="p13"></div>
+		<div class="p14"></div>
+		<div class="p15"></div>
+		<div class="p16"></div>
+		<div class="p17"></div>
+		<div class="p18"></div>
+		<div class="p19"></div>
+		<div class="p20"></div>
+		<div class="p21"></div>
+		<div class="p22"></div>
+		<div class="p23"></div>
+		<div class="p24"></div>
+		<div class="p25"></div>
+		<div class="p26"></div>
+		<div class="p27"></div>
+		<div class="p28"></div>
+		<div class="p29"></div>
+		<div class="p30"></div>
+		<div class="p31"></div>
+		<div class="p32"></div>
+		<div class="p33"></div>
+		<!-- 特殊效果用 -->
+		<div class="e01"></div>
+		<div class="e02"></div>
+		<div class="e03"></div>
+		<div class="e04"></div>
+		<div class="e05"></div>
+		<div class="e06"></div>
+		<div class="e07"></div>
+		<div class="e08"></div>
+		<div class="e09"></div>
+		<div class="e10"></div>
+	</div>
+</body>
+</html>
